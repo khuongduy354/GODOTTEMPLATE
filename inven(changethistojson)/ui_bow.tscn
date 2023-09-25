@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2fkuex406itt"]
+
+[ext_resource type="PackedScene" uid="uid://ctmqni53jhlbb" path="res://UI/ui_item.tscn" id="1_jn4cm"]
+[ext_resource type="Texture2D" uid="uid://dqo0v71qo426e" path="res://assets/0x72_DungeonTilesetII_v1.5.png" id="2_0qjuj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56plg"]
+atlas = ExtResource("2_0qjuj")
+region = Rect2(296, 195, 7, 26)
+
+[node name="Bow" instance=ExtResource("1_jn4cm")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.5
+offset_top = -13.0
+offset_right = 3.5
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_56plg")
+stretch_mode = 4

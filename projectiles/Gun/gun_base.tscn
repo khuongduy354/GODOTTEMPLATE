@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://k3kgqe60xh8n"]
+
+[ext_resource type="PackedScene" uid="uid://kdolsvgqa42g" path="res://Items/item.tscn" id="1_ks855"]
+[ext_resource type="Script" path="res://Items/Gun/gun_base.gd" id="2_tx5x2"]
+
+[node name="GunBase" instance=ExtResource("1_ks855")]
+script = ExtResource("2_tx5x2")
+BulletScene = null
+fire_cooldown = 0.1
+
+[node name="fire_rate" type="Timer" parent="." index="0"]
+wait_time = 0.5
+one_shot = true
+
+[node name="shoot_pos" type="Marker2D" parent="." index="1"]

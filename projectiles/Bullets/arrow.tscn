@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://da1cr1r0yr140"]
+
+[ext_resource type="Texture2D" uid="uid://dqo0v71qo426e" path="res://assets/0x72_DungeonTilesetII_v1.5.png" id="1_arf2n"]
+[ext_resource type="PackedScene" uid="uid://ds16tls7htlq" path="res://Items/Bullets/bullet.tscn" id="1_cg0g2"]
+
+[node name="arrow" instance=ExtResource("1_cg0g2")]
+SPEED = null
+damage = null
+
+[node name="0x72DungeonTilesetIiV1_5" type="Sprite2D" parent="." index="1"]
+rotation = 1.57079
+texture = ExtResource("1_arf2n")
+region_enabled = true
+region_rect = Rect2(324, 202, 7, 21)

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://drq3p7fpj3vl8"]
+
+[ext_resource type="PackedScene" uid="uid://bm0nwcxhmekb0" path="res://UI/Hotbar.tscn" id="1_00if1"]
+[ext_resource type="Script" path="res://UI/player_ui.gd" id="1_2o6hn"]
+[ext_resource type="PackedScene" uid="uid://bid4qv4dkc07c" path="res://UI/inventory.tscn" id="2_sminr"]
+
+[node name="PlayerUI" type="CanvasLayer"]
+script = ExtResource("1_2o6hn")
+
+[node name="Hotbar" parent="." instance=ExtResource("1_00if1")]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 246
+theme_override_constants/margin_top = 150
+
+[node name="Inventory" parent="MarginContainer" instance=ExtResource("2_sminr")]
+visible = false
+layout_mode = 2

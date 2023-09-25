@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://bid4qv4dkc07c"]
+
+[ext_resource type="Script" path="res://UI/inventory.gd" id="1_kibhu"]
+[ext_resource type="PackedScene" uid="uid://raf5tfownbgc" path="res://UI/slot.tscn" id="2_bfeft"]
+[ext_resource type="PackedScene" uid="uid://b2fkuex406itt" path="res://UI/ui_bow.tscn" id="3_w2gj2"]
+[ext_resource type="PackedScene" uid="uid://jwkh38jqreyt" path="res://UI/ui_knife.tscn" id="4_e2p25"]
+
+[node name="Inventory" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 5
+script = ExtResource("1_kibhu")
+
+[node name="Slot" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Bow" parent="Slot" instance=ExtResource("3_w2gj2")]
+layout_mode = 2
+
+[node name="Slot2" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="UIKnife" parent="Slot2" instance=ExtResource("4_e2p25")]
+layout_mode = 2
+
+[node name="Slot3" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Slot4" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Slot5" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Slot6" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Slot7" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Slot8" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Slot9" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
+
+[node name="Slot10" parent="." instance=ExtResource("2_bfeft")]
+layout_mode = 2
